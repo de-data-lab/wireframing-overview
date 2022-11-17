@@ -315,4 +315,6 @@ Wireframes...
   - [Nielsen's 10 usability heuristics](https://aelaschool.com/en/interactiondesign/10-usability-heuristics-ui-design/)
   - Garrett, [The Elements of User Experience Design](http://www.jjg.net/elements/pdf/elements_ch02.pdf)
   
+# Thank you! {background-image="images/bram-naus-n8Qb1ZAkK88-unsplash.jpeg" background-opacity=".1" style="text-align:center"}
 
+[View the repo on Github](https://github.com/de-data-lab/wireframing-overview)
