@@ -1,0 +1,318 @@
+---
+title: "Wireframes and Beyond"
+author: "Nile Miller"
+date: "November 17, 2022"
+title-slide-attributes:
+  data-background-image: "images/wireframe-unsplash-4.jpeg"
+  data-background-opacity: ".4"
+background-transition: fade
+format: 
+  revealjs:
+    theme: 
+      - simple
+      - custom.scss
+    transition: slide
+    slide-number: c
+    show-slide-number: all
+    logo: images/tilogo.png
+    preview-links: auto
+---
+
+## Agenda {background-image="images/bram-naus-n8Qb1ZAkK88-unsplash.jpeg" background-opacity=".1"}
+
+<hr/>
+<br/>
+
+:::{.incremental}
+* **What** is a wireframe? 
+* **Why** use wireframes?
+* Wireframes and the **UI/UX development process**
+* Wireframing **tools**
+* The wireframe **process**
+* Wireframing **drawbacks** and **alternatives**
+:::
+
+# What is a wireframe? {background-image="images/wireframe-unsplash.jpeg" background-opacity=".1" layout-valign="center"}
+
+## {background-image="images/wireframe-unsplash.jpeg" background-opacity=".1" layout-valign="center"}
+
+### A wireframe is...
+
+<br/>
+
+::: {.fragment}
+> "...a two-dimensional illustration of a page’s interface that specifically focuses on **space allocation** and **prioritization of content**, **functionalities available**, and **intended behaviors.**"
+::: 
+
+::: {.fragment}
+  [*usability.gov*](https://www.usability.gov/how-to-and-tools/methods/wireframing.html)
+:::
+
+## {background-image="images/wireframe-unsplash.jpeg" background-opacity=".1"}
+
+### Wireframes have different levels of detail at different stages of the design process.  
+
+<hr/> 
+
+::: {.r-stack}
+:::{.fragment .fade-in-then-out layout-ncol="2" layout-valign="center"}
+**Low fidelity wireframes** are a basic, high-level sketch of a product's structure. 
+
+
+![Source: UX Collective](images/low-fi-wireframe.png){.img-shadow .rounded}
+:::
+
+:::{.fragment .fade-in-then-out layout-ncol="2" layout-valign="center"}
+**Mid-fidelity wireframes** add more detail to the layout. They start to define specific elements and visual hierarchy. 
+
+![Source: Pixel Fridge](images/mid-fidelity.jpeg){.img-shadow .rounded}
+:::
+
+:::{.fragment .fade-in-then-out layout=[[1.5,2]]}
+<br/>
+**High fidelity wireframes** incorporate the product's visual design and begin to resemble the final layout. 
+
+![WRK Group Dashboard](images/hi-fi-wrk.png){.img-shadow .rounded }
+:::
+
+:::
+
+## {background-image="images/wireframe-unsplash.jpeg" background-opacity=".1"}
+
+*Wireframes can become more costly and more risky as they start to look more like the final product.*
+
+:::{layout-ncol=3 layout-valign="center"}
+![](images/low-fi-wireframe.png){height="300" width="300" fig-align="center" .img-shadow .rounded}
+
+![](images/mid-fidelity.jpeg){height="300" width="300" fig-align="center" .img-shadow .rounded}
+
+![](images/hi-fi-wrk.png){height="300" width="300" fig-align="center" .img-shadow .rounded}
+:::
+
+:::: {layout="[[1,1.5,1]]" style="text-align:center; font-size:1.7rem" layout-valign="center"}
+
+:::{.fragment}
+**Low fidelity** <br/>
+(Sketches, diagrams, priority guides)
+<br/><br/> *Low risk, low cost, high abstraction*
+:::
+
+{{< fa arrow-right >}}
+
+:::{.fragment}
+**High fidelity** <br/>
+(Interactive wireframes, mockups, prototypes)
+<br/><br/> *Higher risk, higher cost, low abstraction*
+:::
+
+::::
+
+
+
+# Why use wireframes? {background-image="images/wireframe-unsplash-2.jpeg" background-opacity=".1"}
+
+## {background-image="images/wireframe-unsplash-2.jpeg" background-opacity=".1" style="text-align:center"}
+
+### Wireframes...
+
+<br/>
+
+:::{.r-stack}
+:::{.fragment .fade-in-then-out}
+
+<h1>1</h1> 
+<h2> Establish focus </h2> 
+<br/>
+<h3>Allow concentration on [**structure**]{.yellow} and [**priority**]{.yellow}</h3>
+<br/>
+[{{< fa arrows-to-circle >}}]{.icon}
+
+:::
+
+:::{.fragment .fade-in-then-out}
+
+<h1>2</h1> 
+<h2> Reduce risk </h2> 
+<br/>
+<h3>Promote [**shared understanding**]{.yellow}, early stakeholder/client engagement and buy-in</h3>
+<br/>
+[{{< fa triangle-exclamation >}}]{.icon}
+
+:::
+
+:::{.fragment .fade-in-then-out}
+
+<h1>3</h1> 
+<h2> Promote team and client communication </h2> 
+<br/>
+<h3>Provide a [**visual structure**]{.yellow} for discussion</h3>
+<br/>
+[{{< fa comments >}}]{.icon}
+
+:::
+
+:::{.fragment .fade-in-then-out}
+
+<h1>4</h1> 
+<h2> Enable rapid iteration </h2> 
+<br/>
+<h3>Relatively inexpensive and fast to [refine]{.yellow}, less need for [debugging]{.yellow} or [testing]{.yellow}, simpler to [deploy]{.yellow}</h3>
+<br/>
+[{{< fa truck-fast >}}]{.icon}
+
+:::
+:::
+
+# Wireframes and the UX development process {background-image="images/wireframe-unsplash-2.jpeg" background-opacity=".1"}
+
+
+## The five planes of the UX development process {background-image="images/wireframe-unsplash-2.jpeg" background-opacity=".1"}
+
+
+::: {layout-ncol="2" layout-valign="center"}
+
+![From Jesse James Garrett, *"The Elements of User Experience"*](images/ui-elements.png){height="350" width="400" .img-shadow .rounded}
+
+[{{< fa arrow-left >}} <br/> Wireframing is typically initiated somewhere between the "structure" and "skeleton" planes.]{.fragment}
+
+
+:::
+
+## The five planes of the UX development process *(cont.)* {background-image="images/wireframe-unsplash-2.jpeg" background-opacity=".1"}
+
+::: {layout-ncol="2" layout-valign="center"}
+
+![From Jesse James Garrett, *"The Elements of User Experience"*](images/ui-elements-2.png){height="350" width="400" .img-shadow .rounded}
+
+[Wireframing involves concerns such as interface design, navigation design, interaction design, and information architecture. Visual  design comes into play in the later stages of wireframing.]{.fragment}
+:::
+
+## Wireframes *vs.* mockups *vs.* prototypes {background-image="images/wireframe-unsplash-2.jpeg" background-opacity=".1"}
+
+::: {.incremental}
+* Wireframes are typically **static**.
+* A high-fidelity wireframe may be referred to as a **mockup**. 
+* **Prototypes** are typically interactive and provide a simulation of actual user interactions and navigation flows. 
+:::
+
+:::{style="text-align:center"}
+[...but the terms may be used interchangeably!]{.fragment}
+:::
+
+# Wireframing tools {background-image="images/wireframe-unsplash-3.jpeg" background-opacity=".1"}
+
+## The right tool for the right wireframe {background-image="images/wireframe-unsplash-3.jpeg" background-opacity=".1"}
+
+Different tools are suitable for different wireframe fidelities. 
+
+<br/>
+
+| Fidelity      | Possible Tools |
+| ----------- | ----------- |
+| Low      | Pen/paper, whiteboard; [Miro](https://miro.com/), [app.diagrams.net](https://app.diagrams.net/), Adobe XD, Figma, Sketch        |
+| Medium   | [Miro](https://miro.com/), Adobe XD, Figma, Sketch, Photoshop, InDesign         |
+| High   | Adobe XD, Figma, Sketch        |
+
+# How to build a wireframe {background-image="images/wireframe-unsplash-4.jpeg" background-opacity=".1"}
+
+## 1. Build a list of screens that need to be designed. {background-image="images/wireframe-unsplash-3.jpeg" background-opacity=".1"}
+
+![](images/Wireframes-Basics - screens.jpeg)
+
+## 2. Pick a single screen and build a list of required elements/components. {background-image="images/wireframe-unsplash-3.jpeg" background-opacity=".1"}
+
+![](images/Wireframes-Basics - required elements.jpeg)
+
+## 3. Organize your required components into a hierarchy or rough structure. {background-image="images/wireframe-unsplash-3.jpeg" background-opacity=".1"}
+
+![](images/Wireframes-Basics - hierarchy.jpeg)
+
+
+## 4. Build a low-fidelity wireframe. {background-image="images/wireframe-unsplash-3.jpeg" background-opacity=".1"}
+
+:::{layout="[[2.5,1]]" layout-valign="center"}
+![](images/Wireframes-Basics - single blog post_ low-fi.jpeg)
+
+Avoid the use of specific colors, images, or typography at this step.
+:::
+
+## 5. Refine your work and build a medium-fidelity wireframe. {background-image="images/wireframe-unsplash-3.jpeg" background-opacity=".1"}
+
+:::{layout="[[2.5,1]]" layout-valign="center"}
+![](images/Wireframes-Basics - medium-fi.jpeg)
+
+This can include more detail such as buttons, different text weights, sample text, etc., but should not delve into images or typography.
+:::
+
+
+
+## 6. Develop a design system. {background-image="images/wireframe-unsplash-3.jpeg" background-opacity=".1"}
+
+:::{layout="[[2.5,1]]" layout-valign="center"}
+![](images/Wireframes-Basics - design system.jpeg)
+
+The design system should define the aesthetic/brand guidelines of your product. 
+:::
+
+
+## 7. Develop a high-fidelity wireframe. {background-image="images/wireframe-unsplash-3.jpeg" background-opacity=".1"}
+
+:::{layout="[[2.5,1]]" layout-valign="center"}
+![](images/Wireframes-Basics - high-fi.jpeg)
+
+This should resemble the final product, but at this stage is still static (non-interactive).
+:::
+
+# Wireframing drawbacks and alternatives {background-image="images/wireframe-unsplash-4.jpeg" background-opacity=".1"}
+
+## Where wireframes may fall short {background-image="images/wireframe-unsplash-4.jpeg" background-opacity=".1"}
+
+<br/>
+
+Wireframes... 
+
+:::{.incremental}
+- May **look too simple** to show to a client. 
+- Risk being **misunderstood** by clients ("Why is it all gray?!")
+- **"Lock-in"** - stakeholders insist on specific approved wireframes
+- Create the impression that the product is almost finished
+:::
+
+## Beyond wireframes: Storyframes {background-image="images/wireframe-unsplash-4.jpeg" background-opacity=".1"}
+
+
+:::{layout="[[1,2]]" layout-valign="center"}
+
+[**Storyframes**]{.yellow} are hierarchical, text-only narratives of a webpage's structure and purpose; *"a hybrid document between a script/story and a wireframe."*
+
+![Fabricio Teixeira // uxdesign.cc](images/dropbox.jpeg){height="500" width="500" .rounded .img-shadow}
+
+:::
+
+## Beyond wireframes: Priority guides {background-image="images/wireframe-unsplash-4.jpeg" background-opacity=".1"}
+
+:::{layout="[[1,2]]" layout-valign="center"}
+
+[**Priority guides**]{.yellow} "contain content and elements for a mobile screen, sorted by hierarchy from top to bottom and without layout specifications [...] based on relevance to users.
+
+![Heleen van Nues, Lennart Overkamp // alistapart.com](images/priority-guide.webp){height="300" width="300" .rounded .img-shadow}
+
+:::
+
+# Resources {background-image="images/wireframe-unsplash-4.jpeg" background-opacity=".1"}
+
+## {background-image="images/wireframe-unsplash-4.jpeg" background-opacity=".1"}
+
+- Wireframing and mind-mapping
+  - [Miro](https://miro.com/app/)
+  - [app.diagrams.net](https://app.diagrams.net/)
+- Design system development
+  - [Google fonts](https://fonts.google.com/)
+  - [Behance](https://www.behance.net/) (design inspiration)
+  - [Typ.io](https://typ.io/)
+  - [Adobe Color](https://color.adobe.com/create/color-wheel)
+- UI design theory
+  - [Nielsen's 10 usability heuristics](https://aelaschool.com/en/interactiondesign/10-usability-heuristics-ui-design/)
+  - Garrett, [The Elements of User Experience Design](http://www.jjg.net/elements/pdf/elements_ch02.pdf)
+  
+

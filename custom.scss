@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url("fonts/BrandonGrotesque-Medium.otf") format('opentype');
+}
+
+$brandon: 'Brandon Grotesque', Helvetica, Arial, sans-serif;   
+$body-bg: #0057B8;
+$code-block-bg: #FFFFFF;
+$code-bg: #FFFFFF;
+$code-color: #696969;
+$body-color: #FFFFFF;
+$link-color: #FACE00;
+$font-family-sans-serif: $brandon;
+$presentation-heading-font: $brandon;
+$presentation-font-size-root: 37px; 
+
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+
+.reveal .slide-logo {
+    z-index: 2000;
+}
+
+.reveal .author {
+  margin-top:3rem;
+}
+
+.reveal .slide-number {
+  font-size:1.4rem !important;
+}
+
+.reveal .slide-logo {
+    background-color: rgba(255,255,255,.85); 
+    display: block; 
+    border-radius:10px; 
+    width: 100%; 
+    padding: .25rem 1rem; 
+}
+
+.yellow {
+  color: #FACE00;
+}
+
+.ti-green {
+  color: #93C668;
+}
+
+.icon { 
+  font-size:4rem; 
+  animation: 1s fadeup ease-in-out; 
+}
+
+.reveal .mermaid {
+  background-color: transparent; 
+  
+}
+
+.reveal .nodeLabel {
+  font-family: $brandon;
+}
+
+.reveal .callout {
+  color: $body-bg;
+  background-color: #FFFFFF;
+}
+
+.reveal code {
+  color: #98ff5d;
+  background-color: #000000;
+  font-size: 1.5rem;
+}
+
+
+.img-shadow {
+ box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+}
+
+.rounded {
+  border-radius:10px; 
+}
+
+figcaption {
+  text-align:center !important;
+  margin-top: 0; 
+}
+
+@keyframes fadeup { 
+  from { 
+    margin-top:2rem; 
+    opacity: 0; 
+  }
+  to {
+    margin-top: 0; 
+    opacity: 1; 
+  }
+}
