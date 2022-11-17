@@ -275,7 +275,7 @@ Wireframes...
 - May **look too simple** to show to a client. 
 - Risk being **misunderstood** by clients ("Why is it all gray?!")
 - **"Lock-in"** - stakeholders insist on specific approved wireframes
-- Create the impression that the product is almost finished
+- May create the impression that the product is almost finished
 :::
 
 ## Beyond wireframes: Storyframes {background-image="images/wireframe-unsplash-4.jpeg" background-opacity=".1"}
